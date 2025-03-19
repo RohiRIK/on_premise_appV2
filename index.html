@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Premise Test Application V2</title>
+    <style>
+        /* [Keep existing styles] */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>On-Premise Test Application V2</h1>
+        
+        <div class="info-box">
+            <h2>Server Information</h2>
+            <p><strong>Hostname:</strong> <span id="hostname">Loading...</span></p>
+            <p><strong>IP Address:</strong> <span id="ip">Loading...</span></p>
+            <p><strong>User Agent:</strong> <span id="useragent">Loading...</span></p>
+            <p><strong>Request ID:</strong> <span id="requestid">Loading...</span></p>
+        </div>
+
+        <div class="info-box">
+            <h2>Authentication Status</h2>
+            <p><strong>User ID:</strong> <span id="userid">Loading...</span></p>
+            <p><strong>Authentication Method:</strong> <span id="authmethod">Loading...</span></p>
+            <p><strong>Session ID:</strong> <span id="sessionid">Loading...</span></p>
+        </div>
+
+        <div class="info-box">
+            <h2>Request Headers</h2>
+            <pre id="headers">Loading...</pre>
+        </div>
+
+        <div class="info-box">
+            <h2>API Endpoints</h2>
+            <button onclick="testApi()">Test API</button>
+            <pre id="apiResponse"></pre>
+        </div>

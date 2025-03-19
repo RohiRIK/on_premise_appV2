@@ -1,0 +1,22 @@
+{
+  "status": "active",
+  "version": "2.0.0",
+  "endpoints": [
+    {
+      "path": "/api",
+      "method": "GET",
+      "description": "API information"
+    },
+    {
+      "path": "/api/status",
+      "method": "GET",
+      "description": "Server status"
+    },
+    {
+      "path": "/api/auth",
+      "method": "GET",
+      "description": "Authentication information"
+    }
+  ],
+  "timestamp": "2023-03-19T10:00:00Z"
+} 

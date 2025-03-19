@@ -1,0 +1,20 @@
+{
+  "status": "operational",
+  "uptime": "1d 2h 34m",
+  "environment": "testing",
+  "resources": {
+    "cpu": "23%",
+    "memory": "156MB",
+    "connections": 12
+  },
+  "services": [
+    {
+      "name": "nginx",
+      "status": "running"
+    },
+    {
+      "name": "api",
+      "status": "running"
+    }
+  ]
+} 

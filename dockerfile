@@ -6,16 +6,18 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
 # Install additional tools with version pinning
 RUN apk add --no-cache \
-    curl=8.4.0-r0 \
-    iputils=20221126-r0 \
-    net-tools=2.10-r0 \
-    bind-tools=9.18.19-r0 \
-    tini=0.19.0-r1
+    curl \
+    iputils \
+    net-tools \
+    bind-tools \
+    tini
 
 # Copy configuration and application files
 COPY --chown=appuser:appgroup nginx.conf /etc/nginx/nginx.conf
 COPY --chown=appuser:appgroup index.html /usr/share/nginx/html/
-COPY --chown=appuser:appgroup api /usr/share/nginx/html/api
+
+# Copy API files
+COPY --chown=appuser:appgroup api /usr/share/nginx/html/api/
 
 # Create directories for logs and metrics
 RUN mkdir -p /var/log/nginx /var/cache/nginx /var/run/nginx && \

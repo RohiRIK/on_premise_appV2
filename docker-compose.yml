@@ -4,7 +4,7 @@ services:
   webapp:
     build: .
     ports:
-      - "8080:80"
+      - "8081:80"
       - "9145:9145"  # Prometheus metrics endpoint
     environment:
       - NGINX_HOST=localhost

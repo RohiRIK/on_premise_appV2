@@ -57,7 +57,7 @@ docker-compose up -d
 ```
 
 4. Access the application:
-   - Web Interface: `http://localhost:8080`
+   - Web Interface: `http://localhost:8081`
    - Metrics: `http://localhost:9090` (Prometheus)
 
 ## ⚙️ Configuration Options
